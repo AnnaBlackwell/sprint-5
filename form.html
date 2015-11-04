@@ -7,36 +7,29 @@
     <title>HTML5 Contact Form</title>
     <link rel="stylesheet" media="screen" href="styles.css">
   </head>
+
   <body>
     <p>This tutorial took me 45min, after having done the full treehouse forms course</p>
+
     <form class="contact_form" action="http://example.org/" method="post" name="contact_form">
-      <ul>
-        <li>
-             <h2>Contact Us</h2>
-             <span class="required_notification">* Denotes Required Field</span>
-        </li>
-        <li>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" placeholder="John Doe" required>
-        </li>
-        <li>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="john_doe@example.com" required>
-          <span class="form_hint">Proper format "name@something.com"</span>
-        </li>
-        <li>
-          <label for="website">Website:</label>
-          <input type="url" id="website" name="website" placeholder="http://johndoe.com" required>
-          <span class="form_hint">Proper format "http://someaddress.com"</span>
-        </li>
-        <li>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" cols="40" rows="6" required> </textarea>
-        </li>
-        <li>
-          <button class="submit" type="submit">Submit Form</button>
-        </li>
-      </ul>
+      <h1>Contact Us</h1>
+      <div class="required_notification">* Denotes Required Field</div>
+
+      <label for="name">Name:</label> <br>
+      <input type="text" id="name" name="name" placeholder="John Doe" required> <br>
+
+      <label for="email">Email:</label> <br>
+      <input type="email" id="email" name="email" placeholder="john_doe@example.com" required> <br>
+      <div class="form_hint">Proper format "name@something.com"</div> <br>
+
+      <label for="website">Website:</label> <br>
+      <input type="url" id="website" name="website" placeholder="http://johndoe.com" required> <br>
+      <div class="form_hint">Proper format "http://someaddress.com"</div> <br>
+
+      <label for="message">Message:</label> <br>
+      <textarea id="message" name="message" cols="40" rows="6" required> </textarea> <br>
+
+      <button class="submit" type="submit">Submit Form</button>
     </form>
   </body>
 </html>
